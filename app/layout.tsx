@@ -21,6 +21,17 @@ export const metadata: Metadata = {
     shortcut: "/logo.svg",
     apple: "/logo.svg",
   },
+  openGraph: {
+    title: "Jurne Studio",
+    description: "Arquitectura Digital de Alto Rendimiento",
+    images: ["/og-image.png"], // Imagen para compartir en redes
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jurne Studio",
+    description: "Arquitectura Digital de Alto Rendimiento",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
