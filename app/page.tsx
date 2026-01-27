@@ -448,7 +448,7 @@ const App: React.FC = () => {
               <div className="inline-block px-4 py-1.5 border border-[#C3FF00]/40 rounded-full bg-[#C3FF00]/5 text-[#C3FF00] text-[8px] md:text-[9px] font-bold uppercase tracking-[0.3em]">{CONTENT.hero.tag[lang]}</div>
               <h1 className="text-[11.5vw] md:text-[10vw] font-black leading-[0.85] tracking-tighter uppercase">
                 {CONTENT.hero.title1[lang]} <br />
-                <span className="text-transparent stroke-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.15)' }}>{CONTENT.hero.title2[lang]}</span> <br />
+                {CONTENT.hero.title2[lang]} <br />
                 <span className="text-[#C3FF00]">{CONTENT.hero.title3[lang]}</span>
               </h1>
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-8 md:mt-12">
@@ -498,7 +498,7 @@ const App: React.FC = () => {
                 className="w-64 h-64 md:w-[450px] md:h-[450px] border-2 border-dashed border-black/5 rounded-full flex items-center justify-center"
               >
                 <div className="w-4/5 h-4/5 border border-black/5 rounded-full flex items-center justify-center relative">
-                   <Activity className="text-[#C3FF00] w-16 h-16 md:w-32 md:h-32" />
+                    <Activity className="text-[#C3FF00] w-16 h-16 md:w-32 md:h-32" />
                 </div>
               </motion.div>
               <motion.div 
@@ -550,9 +550,9 @@ const App: React.FC = () => {
                   </div>
                 </div>
                 <div className="pt-8">
-                   <div className="flex items-center gap-3 text-[10px] font-black uppercase text-[#C3FF00] group-hover:text-black transition-colors">
+                    <div className="flex items-center gap-3 text-[10px] font-black uppercase text-[#C3FF00] group-hover:text-black transition-colors">
                       {lang === 'es' ? 'Consultar' : 'Consult'} <ArrowRight size={14} />
-                   </div>
+                    </div>
                 </div>
               </motion.div>
             ))}
@@ -592,8 +592,8 @@ const App: React.FC = () => {
                   </div>
                   <div className="flex justify-between items-start px-2">
                     <div>
-                       <h3 className="text-xl font-black group-hover:text-[#C3FF00] transition-colors">{project.title}</h3>
-                       <span className="text-[9px] font-bold uppercase opacity-30">{project.category[lang]}</span>
+                        <h3 className="text-xl font-black group-hover:text-[#C3FF00] transition-colors">{project.title}</h3>
+                        <span className="text-[9px] font-bold uppercase opacity-30">{project.category[lang]}</span>
                     </div>
                     <span className="font-mono text-[10px] opacity-20">{project.year}</span>
                   </div>
@@ -662,8 +662,8 @@ const App: React.FC = () => {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#C3FF00]">Fully Operational</span>
               </div>
               <div className="space-y-1">
-                 <p className="text-xs font-bold text-white/40 hover:text-white transition-colors cursor-pointer">hello@jurne.studio</p>
-                 <p className="text-xs font-bold text-white/40">Córdoba // Argentina</p>
+                  <p className="text-xs font-bold text-white/40 hover:text-white transition-colors cursor-pointer">hello@jurne.studio</p>
+                  <p className="text-xs font-bold text-white/40">Córdoba // Argentina</p>
               </div>
             </div>
           </div>
